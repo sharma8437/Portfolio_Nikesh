@@ -236,8 +236,8 @@ const Hero = () => {
               <div className="absolute bottom-5 sm:bottom-8 lg:bottom-10 -left-3 sm:-left-4 lg:-left-5 bg-white border border-gray-200 px-2 sm:px-3 lg:px-4 py-1.5 sm:py-2 shadow-sm">
                 <div className="text-center">
                   <div className="text-xl sm:text-2xl font-bold text-gray-900">1+</div>
-                  <div className="text-[10px] sm:text-xs text-gray-500">Working</div>
-                  <div className="text-[10px] sm:text-xs text-gray-500">Professional</div>
+                  <div className="text-[10px] sm:text-xs text-gray-500">Year</div>
+                  <div className="text-[10px] sm:text-xs text-gray-500">Experience</div>
                 </div>
               </div>
             </div>

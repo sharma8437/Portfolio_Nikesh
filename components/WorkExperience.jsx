@@ -17,33 +17,37 @@ const WorkExperience = () => {
   }, [])
 
   const experiences = [
-    {
-      role: 'React Developer',
-      company: 'Avua',
-      period: 'MAR 2025 - Present',
-      location: 'Mohali, Punjab',
-      type: 'Full-time',
-      achievements: [
-        'Built full-stack applications from scratch serving 10k+ users',
-        'Integrated third-party APIs and payment gateways',
-        'Optimized database queries for better performance',
-        'Implemented responsive designs for mobile users'
-      ],
-      tech: ['React', 'Tailwind', 'Quill', 'Framer-Motion', 'Redux-Toolkit'],
-    },
-    {
-      role: 'Full Stack Trainee',
-      company: 'Antier Solutions',
-      period: 'JULY 2024 - FEB 2025',
-      location: 'Mohali, Punjab',
-      type: 'Internship',
-      achievements: [
-        'Built reusable components and libraries',
-        'Participated in code reviews and agile ceremonies',
-        'Reduced bundle size by 25% through optimization'
-      ],
-      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Redux-Toolkit', 'Firebase'],
-    }
+  {
+  role: 'Frontend Developer',
+  company: 'Avua',
+  period: 'MAR 2025 - Present',
+  location: 'Mohali, Punjab',
+  type: 'Full-time',
+  achievements: [
+    'Developed responsive and modern web applications using React.js',
+    'Built reusable UI components for scalable frontend architecture',
+    'Integrated REST APIs and optimized frontend performance',
+    'Enhanced user experience with smooth animations and mobile-friendly designs',
+    'Currently working on CMP project and developing advanced frontend features'
+  ],
+  tech: ['React', 'Tailwind', 'Quill', 'Framer-Motion', 'Redux-Toolkit'],
+},
+   {
+  role: 'MERN Stack Trainee',
+  company: 'Antier Solutions',
+  period: 'JULY 2024 - FEB 2025',
+  location: 'Mohali, Punjab',
+  type: 'Internship',
+  achievements: [
+    'Learned and built full-stack applications using MongoDB, Express.js, React.js, and Node.js',
+    'Developed reusable components and scalable frontend architecture',
+    'Worked on REST APIs, authentication, and database integration',
+    'Created responsive user interfaces with modern design practices',
+    'Enhanced debugging, problem-solving, and clean coding skills',
+    'Gained strong understanding of real-world software development practices'
+  ],
+  tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Redux-Toolkit', 'Firebase'],
+}
   ]
 
   return (

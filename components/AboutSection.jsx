@@ -15,20 +15,20 @@ const About = () => {
       title: "Backend",
       desc: "Node.js, Express.js, MongoDB ",
     },
+   {
+  icon: FiLayout,
+  title: "Design",
+  desc: "Responsive Design, UI Implementation, Basic Figma Collaboration, UI/UX Best Practices",
+},
     {
-      icon: FiLayout,
-      title: "Design",
-      desc: "Figma, Responsive, UI/UX Principles",
-    },
-    {
-      icon: FiTrendingUp,
-      title: "Performance",
-      desc: "Optimization, SEO, Accessibility",
-    },
+  icon: FiTrendingUp,
+  title: "Performance",
+  desc: "Performance Optimization, Basic SEO, Accessibility Standards, Clean Code Practices",
+},
   ];
 
   return (
-    <section id="about" className="py-16 sm:py-20 md:py-24 lg:py-28 bg-white">
+    <section id="about" className="py-9 sm:py-20 md:py-24 lg:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Mobile: Text first, then image */}
         <div className="block lg:hidden">

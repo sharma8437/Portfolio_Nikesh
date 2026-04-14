@@ -48,7 +48,7 @@ const Projects = () => {
       id: 2,
       title: 'SociPro',
       description: 'All-in-one Chrome extension for social media growth with bookmark management, smart tools, productivity features, and a modern responsive UI for creators and professionals.',
-      tech: ['React', 'JavaScript', 'Chrome Extension API', 'Tailwind', 'Local Storage'],
+      tech: ['React', 'JavaScript', 'Tailwind', 'Local Storage','CSS'],
       github: 'https://github.com/sharma8437/Chrome_Extension_SociPro',
       live: 'https://chromewebstore.google.com/detail/socipro-%E2%80%93-all-in-one-book/fmbffpbblcjpkaldfcbelblljpgkpgbi',
       category: 'frontend',
@@ -61,7 +61,7 @@ const Projects = () => {
       id: 3,
       title: 'Git Branch Manager',
       description: 'Chrome extension that helps developers quickly manage Git branches with an intuitive interface for branch switching, cleanup, and workflow productivity directly from the browser.',
-      tech: ['React', 'JavaScript', 'Chrome Extension API', 'Tailwind', 'CSS'],
+      tech: ['React', 'JavaScript', 'Tailwind', 'CSS', 'Local Storage'],
       github: 'https://github.com/sharma8437/git_branch_manager_chrome_extension',
       live: 'https://chromewebstore.google.com/detail/git-branch-manager/cjmdpgbfkfafokolbbgnefjammbfhanm',
       category: 'frontend',
@@ -187,13 +187,13 @@ const Projects = () => {
             <div className="flex gap-2">
               <button
                 onClick={() => setViewMode('grid')}
-                className={`p-1.5 sm:p-2 rounded-lg transition-all ${viewMode === 'grid' ? 'bg-gray-900 text-white' : 'bg-white text-gray-500 border border-gray-200'}`}
+                className={`p-1.5 sm:p-2 md:block hidden rounded-lg transition-all ${viewMode === 'grid' ? 'bg-gray-900 text-white' : 'bg-white text-gray-500 border border-gray-200'}`}
               >
                 <FiGrid size={16} className="sm:w-[18px] sm:h-[18px]" />
               </button>
               <button
                 onClick={() => setViewMode('list')}
-                className={`p-1.5 sm:p-2 rounded-lg transition-all ${viewMode === 'list' ? 'bg-gray-900 text-white' : 'bg-white text-gray-500 border border-gray-200'}`}
+                className={`p-1.5 sm:p-2 md:block hidden rounded-lg transition-all ${viewMode === 'list' ? 'bg-gray-900 text-white' : 'bg-white text-gray-500 border border-gray-200'}`}
               >
                 <FiList size={16} className="sm:w-[18px] sm:h-[18px]" />
               </button>
@@ -357,7 +357,7 @@ const Projects = () => {
           <div className="text-center py-12 sm:py-16">
             <FiFolder size={48} className="text-gray-300 mx-auto mb-3 sm:mb-4" />
             <h3 className="text-base sm:text-lg font-medium text-gray-900 mb-2">No projects found</h3>
-            <p className="text-sm text-gray-500">Try adjusting your search or filter</p>
+            
             <button onClick={() => {setFilter('all'); setSearchTerm('');}} className="mt-3 sm:mt-4 text-sm text-gray-600 underline">
               Clear filters
             </button>
