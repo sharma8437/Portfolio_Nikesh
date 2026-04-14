@@ -8,12 +8,12 @@ const About = () => {
     {
       icon: FiCode,
       title: "Frontend",
-      desc: "React, Next.js, TypeScript, Tailwind",
+      desc: "React, Next.js, TypeScript, Tailwind, MUI, Redux,Shadcn",
     },
     {
       icon: FiServer,
       title: "Backend",
-      desc: "Node.js, Python, PostgreSQL, MongoDB",
+      desc: "Node.js, Express.js, MongoDB ",
     },
     {
       icon: FiLayout,
@@ -75,15 +75,25 @@ const About = () => {
               ))}
             </div>
 
-            <button className="px-5 sm:px-6 py-2 sm:py-2.5 bg-gray-900 text-white text-xs sm:text-sm hover:bg-gray-800 transition-colors">
-              Contact me
-            </button>
+           <a
+  href="#contact"
+  onClick={(e) => {
+    e.preventDefault();
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }}
+  className="px-5 sm:px-6 py-2 sm:py-2.5 bg-gray-900 text-white text-xs sm:text-sm hover:bg-gray-800 transition-colors inline-block cursor-pointer"
+>
+  Contact me
+</a>
           </div>
 
           {/* Image for Mobile */}
           <div className="relative flex justify-center">
             <div className="relative w-full max-w-md">
-              <div className="relative bg-[#ffffff] p-4 sm:p-6 rounded-sm">
+              <div className="relative  p-4 sm:p-6 rounded-sm">
                 <div className="relative w-64 h-64 sm:w-80 sm:h-80 mx-auto">
                   <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 rounded-sm flex items-center justify-center overflow-hidden">
                     {aboutSection?.about5 ? (
@@ -203,9 +213,19 @@ const About = () => {
               ))}
             </div>
 
-            <button onClick={() => window.location.href = "#contact"} className="px-6 py-2.5 bg-gray-900 text-white text-sm hover:bg-gray-800 transition-colors">
-              Contact me
-            </button>
+            <a
+  href="#contact"
+  onClick={(e) => {
+    e.preventDefault();
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }}
+  className="px-6 py-2.5 bg-gray-900 text-white text-sm hover:bg-gray-800 transition-colors inline-block cursor-pointer"
+>
+  Contact me
+</a>
           </div>
         </div>
       </div>

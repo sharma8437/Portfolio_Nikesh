@@ -209,7 +209,7 @@ const Hero = () => {
               <div className="hidden sm:block absolute -bottom-4 sm:-bottom-6 -right-4 sm:-right-6 w-20 sm:w-32 h-20 sm:h-32 border-b-2 border-r-2 border-[#7223e8]"></div>
 
               {/* Main Image Container */}
-              <div className="relative bg-[#ffffff] p-4 sm:p-6 lg:p-8 rounded-sm">
+              <div className="relative md:bg-[#ffffff] p-4 sm:p-6 lg:p-8 rounded-sm">
                 <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] mx-auto">
                   {/* Replace with your actual image */}
                   <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 rounded-sm flex items-center justify-center">

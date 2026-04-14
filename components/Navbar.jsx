@@ -14,7 +14,7 @@ const Navbar = () => {
     { name: 'Work Experience', href: '#work-experience', id: 'work-experience' },
     { name: 'Tech Stack', href: '#tech-stack', id: 'tech-stack' },
     { name: 'Projects', href: '#projects', id: 'projects' },
-    { name: 'Contact', href: '#contact', id: 'contact' },
+    { name: 'Contact', href: 'contact', id: 'contact' },
   ]
 
   useEffect(() => {
