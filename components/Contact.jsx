@@ -96,8 +96,8 @@ const Contact = () => {
 
   const contactInfo = [
     { icon: FiMail, title: 'Email', value: 'nikeshsharma100100@gmail.com', link: 'mailto:nikeshsharma100100@gmail.com' },
-    { icon: FiMapPin, title: 'Location', value: 'Mohali, Punjab', link: null },
-    { icon: FiClock, title: 'Response', value: 'Within 24 hours', link: null }
+    { icon: FiMapPin, title: 'Location', value: 'Chandigarh, India', link: null },
+
   ]
 
   const socialLinks = [

@@ -10,7 +10,6 @@ import {
 import { navbarAssets } from "../assets/asset";
 import { FaXTwitter } from "react-icons/fa6";
 
-
 const Hero = () => {
   const [typedText, setTypedText] = useState("");
   const [wordIndex, setWordIndex] = useState(0);
@@ -26,33 +25,32 @@ const Hero = () => {
 
   // Download CV function
   const downloadCV = async () => {
-  setIsDownloading(true);
-  try {
-    const cvUrl = "/cv/NikeshCV_MERN_Stack_developer.pdf";
-    const response = await fetch(cvUrl);
-    
-    if (!response.ok) throw new Error("CV not found");
-    
-    const blob = await response.blob();
-    const link = document.createElement("a");
-    link.href = URL.createObjectURL(blob);
-    link.download = "Nikesh_Sharma_CV.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(link.href);
-    
-    // Show success message (optional)
-    console.log("Download started successfully");
-  } catch (error) {
-    console.error("Error downloading CV:", error);
-    // Show error message (optional)
-    alert("Failed to download CV. Please try again later.");
-  } finally {
-    setIsDownloading(false);
-  }
-};
+    setIsDownloading(true);
+    try {
+      const cvUrl = "/cv/NikeshCV_MERN_Stack_developer.pdf";
+      const response = await fetch(cvUrl);
 
+      if (!response.ok) throw new Error("CV not found");
+
+      const blob = await response.blob();
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "Nikesh_Sharma_CV.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(link.href);
+
+      // Show success message (optional)
+      console.log("Download started successfully");
+    } catch (error) {
+      console.error("Error downloading CV:", error);
+      // Show error message (optional)
+      alert("Failed to download CV. Please try again later.");
+    } finally {
+      setIsDownloading(false);
+    }
+  };
 
   useEffect(() => {
     const handleTyping = () => {
@@ -114,26 +112,39 @@ const Hero = () => {
               </div>
 
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                Full-stack developer building scalable, user-focused web
-                applications with clean and efficient code.
+                Full-stack developer passionate about creating meaningful
+                digital experiences people love to use. I turn ideas into
+                scalable, user-friendly web applications with clean and
+                efficient code, focusing on performance, reliability, and
+                seamless experiences that grow with your needs.
               </p>
             </div>
 
             {/* Stats */}
             <div className="flex flex-wrap gap-6 sm:gap-12">
               <div>
-                <div className="text-2xl sm:text-3xl font-semibold text-gray-900">1+</div>
+                <div className="text-2xl sm:text-3xl font-semibold text-gray-900">
+                  1+
+                </div>
                 <div className="text-xs sm:text-sm text-gray-500 mt-1">
                   Years Experience
                 </div>
               </div>
-              <div>
-                <div className="text-2xl sm:text-3xl font-semibold text-gray-900">6+</div>
-                <div className="text-xs sm:text-sm text-gray-500 mt-1">Projects Done</div>
+              <div className="">
+                <div className="text-2xl sm:text-3xl font-semibold text-gray-900">
+                  6+
+                </div>
+                <div className="text-xs sm:text-sm text-gray-500 mt-1">
+                  Projects Done
+                </div>
               </div>
               <div>
-                <div className="text-2xl sm:text-3xl font-semibold text-gray-900">2+</div>
-                <div className="text-xs sm:text-sm text-gray-500 mt-1">Live Chrome Extensions</div>
+                <div className="text-2xl sm:text-3xl font-semibold text-gray-900">
+                  2+
+                </div>
+                <div className="text-xs sm:text-sm text-gray-500 mt-1">
+                  Live Chrome Extensions
+                </div>
               </div>
             </div>
 
@@ -154,7 +165,7 @@ const Hero = () => {
                 />
               </button>
 
-              <button 
+              <button
                 onClick={downloadCV}
                 className="group px-5 sm:px-8 py-2.5 sm:py-3 border border-gray-300 text-gray-700 text-xs sm:text-sm font-medium tracking-wide hover:border-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300 flex items-center gap-2"
               >
@@ -199,10 +210,8 @@ const Hero = () => {
           </div>
 
           {/* RIGHT SIDE - Image */}
-          
+
           <div className="relative flex justify-center lg:justify-end mt-8 lg:mt-0">
-            
-            
             <div className="relative w-full max-w-md lg:max-w-full">
               {/* Decorative background elements - hidden on mobile, visible on tablet+ */}
               <div className="hidden sm:block absolute -top-4 sm:-top-6 -left-4 sm:-left-6 w-20 sm:w-32 h-20 sm:h-32 border-t-2 border-l-2 border-[#7223e8]"></div>
@@ -235,9 +244,15 @@ const Hero = () => {
               {/* Projects Badge - responsive positioning */}
               <div className="absolute bottom-5 sm:bottom-8 lg:bottom-10 -left-3 sm:-left-4 lg:-left-5 bg-white border border-gray-200 px-2 sm:px-3 lg:px-4 py-1.5 sm:py-2 shadow-sm">
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-gray-900">1+</div>
-                  <div className="text-[10px] sm:text-xs text-gray-500">Year</div>
-                  <div className="text-[10px] sm:text-xs text-gray-500">Experience</div>
+                  <div className="text-xl sm:text-2xl font-bold text-gray-900">
+                    1+
+                  </div>
+                  <div className="text-[10px] sm:text-xs text-gray-500">
+                    Years
+                  </div>
+                  <div className="text-[10px] sm:text-xs text-gray-500">
+                    Experience
+                  </div>
                 </div>
               </div>
             </div>
