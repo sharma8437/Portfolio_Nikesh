@@ -27,7 +27,7 @@ const Hero = () => {
   const downloadCV = async () => {
     setIsDownloading(true);
     try {
-      const cvUrl = "/cv/NikeshCV_MERN_Stack_developer.pdf";
+      const cvUrl = "/cv/nikesh_sharma_MERN_stack_Developer1.pdf";
       const response = await fetch(cvUrl);
 
       if (!response.ok) throw new Error("CV not found");
